@@ -1,0 +1,95 @@
+<div class="row">
+    <div class="col-md-4">
+        <div class="ibox">
+            <div class="ibox-title">
+                <h4>Listado de mascotas</h4>
+            </div>
+            <div class="ibox-content">
+    
+                <table class="table">
+                    ​
+                    <!-- Encabezado de la tabla -->
+                    <thead>
+                        <tr>                                                    
+                            <th>Nombre</th>
+                            <th>Especie</th>
+                            <th>Raza</th>
+                            <th>Color</th>
+                            <th>Tamano</th>
+                            <th>IdCliente</th>
+                        </tr>
+                    </thead>
+                    ​
+                    <!-- -->
+    
+                    ​
+                    <!-- Cuerpo de la tabla -->
+                    <tbody>
+                        <tr *ngFor="let cli of listaMascotas">                            
+                            <td>{{cli.Nombre}}</td>     
+                            <td>{{cli.Especie}}</td>     
+                            <td>{{cli.Raza}}</td>
+                            <td>{{cli.Color}}</td>     
+                            <td>{{cli.Tamano}}</td>
+                            <td>{{cli.IdCliente}}</td>                                   
+                        </tr>        
+      
+                    </tbody>
+                    ​
+                    ​
+                </table>                
+            </div>
+        </div>
+    </div>
+
+<div class="col-md-2"></div>
+<div class="col-md-4">
+<div class="ibox">
+    <div class="row3">
+        <h4>Ingresar datos mascota</h4>
+    </div>
+    <div class="ibox-content">
+
+        <form #mascotaform="ngForm" (ngSubmit)="setMascota()">
+            
+            <div class="form-group">
+                <p>Nombre</p>
+                <input type="text" placeholder="nombre" id="nombre" [(ngModel)]="outPut.Nombre" name="nombre"
+                    class="form-control">
+            </div>
+            <div class="form-group">
+                <p>Especie</p>
+                <input type="text" placeholder="especie" id="especie" [(ngModel)]="outPut.Especie"
+                    class="form-control" name="especie" required>
+            </div>
+            <div class="form-group">
+                <p>Raza</p>
+                <input type="text" placeholder="raza" id="raza" [(ngModel)]="outPut.Raza"
+                    name="raza" class="form-control">
+            </div>
+            
+            <div class="form-group">
+                <p>Color</p>
+                <input type="text" placeholder="color" id="color" [(ngModel)]="outPut.Color"
+                    name="color" class="form-control">
+            </div>
+            <div class="form-group">
+                <p>Tamaño</p>
+                <input type="text" placeholder="tamano" id="tamano" [(ngModel)]="outPut.Tamano"
+                    name="tamano" class="form-control">
+            </div>
+            <div class="form-group">
+                <p>IdCliente</p> 
+                <input type="text" placeholder="idcliente" id="idcliente" [(ngModel)]="outPut.IdCliente"
+                    name="idcliente" class="form-control">
+            </div>
+
+            ​<button type="submit" class="btn-btn-primary">Guardar</button>
+
+        </form>
+        ​
+    </div>
+</div>
+</div> 
+</div>
+
