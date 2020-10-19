@@ -38,9 +38,9 @@ export class AuthService {
     
       this.afAuth.signInWithEmailAndPassword(email,password)
       .then((result) => {
-        
+        window.location.href = "http://localhost:4200/inicio";
         //window.location.href = "http://sitio2.bitworks.com.sv/desafio1/";
-        this.router.navigate(['inicio']);
+        //this.router.navigate(['inicio']);
         this.SetUserData(result.user);
       }).catch((error) => {
         window.alert(error.message)
@@ -74,9 +74,9 @@ export class AuthService {
     AuthLogin(provider) {
       return this.afAuth.signInWithPopup(provider)
       .then((result) => {
-            
+        window.location.href = "http://localhost:4200/inicio"; 
         //window.location.href = "http://sitio2.bitworks.com.sv/desafio1/";          
-        this.router.navigate(['inicio']);
+        //this.router.navigate(['inicio']);
         this.SetUserData(result.user);
       }).catch((error) => {
         window.alert(error)
