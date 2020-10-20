@@ -49,7 +49,8 @@ export class MascotaComponent implements OnInit {
       this.getListadoMascotas();
       this.outPut = new  Mascota();
     },error=>{
-      alert(JSON.stringify(error))
+      //alert(JSON.stringify(error))
+      alert("Complete todos los campos");
     })
   }
 

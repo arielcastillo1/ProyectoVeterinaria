@@ -36,7 +36,8 @@ export class ClienteComponent implements OnInit {
       this.getListadoClientes();
       this.outPut = new  Cliente();
     },error=>{
-      alert(JSON.stringify(error))
+      //alert(JSON.stringify(error))
+      alert("Complete todos los campos");
     })
   }
 
