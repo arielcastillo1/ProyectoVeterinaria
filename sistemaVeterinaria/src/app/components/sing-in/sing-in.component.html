@@ -1,38 +1,22 @@
-<div class="displayTable">
-    <div class="displayTableCell">
-  
-      <div class="authBlock">
-        <h3>Inicio de sesión</h3>
-        <div class="formGroup">
-          <input type="text" class="formControl" placeholder="Username" #userName required>
+
+      
+        
+<div class="col-md-2">
+          <div class="login-form">
+            <form action="/examples/actions/confirmation.php" method="post">
+                <h2 class="text-center">Iniciar sesión</h2>       
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Username" #userName required>                    
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" placeholder="Password" #userPassword required>                  
+                </div>
+                <div class="form-group">
+                    <button type="button" (click)="authService.SignIn(userName.value, userPassword.value)" class="btn btn-primary btn-block">Iniciar sesión</button>
+                </div>
+                <div class="form-group">
+                  <button type="button" (click)="authService.GoogleAuth()" class="btn btn-primary btn-block">Iniciar sesión con google</button>
+                </div> 
+            </form>            
         </div>
-  
-        <div class="formGroup">
-          <input type="password" class="formControl" placeholder="Password" #userPassword required>
-        </div>
-  
-        <!-- Calling SignIn Api from AuthService -->
-        <div class="formGroup">
-          <input type="button" class="btn btnPrimary" value="Log in" (click)="authService.SignIn(userName.value, userPassword.value)">
-        </div>
-  
-        <div class="formGroup">
-          <span class="or"><span class="orInner"></span></span>
-        </div>
-  
-        <!-- Calling GoogleAuth Api from AuthService -->
-        <div class="formGroup">
-          <button type="button" class="btn googleBtn" (click)="authService.GoogleAuth()">
-            <i class="fab fa-google-plus-g"></i>
-            Iniciar sesión con Google
-          </button>
-        </div>
-  
-       
-      </div>
-  
-     
-  
-    </div>
-  </div>
-  
+</div>

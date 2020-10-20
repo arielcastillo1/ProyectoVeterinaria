@@ -10,7 +10,7 @@ import { MascotaComponent } from '../components/mascota/mascota.component';
 import { CitaComponent } from '../components/cita/cita.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/sign-in', pathMatch: 'full' },
+  { path: '', redirectTo: '/inicio', pathMatch: 'full' },
   { path: 'sign-in', component: SingInComponent },
   { path: 'inicio', component: InicioComponent,canActivate:[AuthGuard]},
   { path: 'cliente',component:ClienteComponent,canActivate:[AuthGuard]},
