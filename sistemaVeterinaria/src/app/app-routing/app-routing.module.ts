@@ -4,14 +4,18 @@ import { Routes, RouterModule } from '@angular/router';
 import { SingInComponent } from '../components/sing-in/sing-in.component';
 import { InicioComponent } from '../components/inicio/inicio.component';
 import { AuthGuard } from '../services/auth.guard';
-import { ClienteComponent } from '../components/cliente/cliente.component';
 import { AuthService } from '../services/auth.service';
+import { ClienteComponent } from '../components/cliente/cliente.component';
+import { MascotaComponent } from '../components/mascota/mascota.component';
+import { CitaComponent } from '../components/cita/cita.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/sign-in', pathMatch: 'full' },
   { path: 'sign-in', component: SingInComponent },
   { path: 'inicio', component: InicioComponent,canActivate:[AuthGuard]},
-  { path:'cliente',component:ClienteComponent,canActivate:[AuthGuard]}  
+  { path: 'cliente',component:ClienteComponent,canActivate:[AuthGuard]},
+  { path: 'mascota',component:MascotaComponent,canActivate:[AuthGuard]},
+  { path: 'cita',component:CitaComponent,canActivate:[AuthGuard]}  
 ];
 
 

@@ -14,13 +14,17 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthService } from './services/auth.service';
 import { ClienteComponent } from './components/cliente/cliente.component';
+import { MascotaComponent } from './components/mascota/mascota.component';
+import { CitaComponent } from './components/cita/cita.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SingInComponent,
     InicioComponent,
-    ClienteComponent
+    ClienteComponent,
+    MascotaComponent,
+    CitaComponent
   ],
   imports: [
     BrowserModule,
