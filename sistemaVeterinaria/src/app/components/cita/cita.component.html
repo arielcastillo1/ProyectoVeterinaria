@@ -51,25 +51,22 @@
         <form #citaform="ngForm" (ngSubmit)="setCita()">
             
             <div class="form-group">
-                <p>Fecha De Reserva</p>
-                <input type="datetime" placeholder="fechareserva" id="fechareserva" [(ngModel)]="outPut.FechaReserva" name="fechareserva"
+                <p>Fecha de cita</p>
+                <input type="date" placeholder="fechareserva" id="fechareserva" [(ngModel)]="outPut.FechaReserva" name="FechaReserva"
                     class="form-control">
-            </div>
+            </div>        
             <div class="form-group">
-                <p>Fecha De Ingreso</p>
-                <input type="datetime" placeholder="fechaingreso" id="fechaingreso" [(ngModel)]="outPut.FechaIngreso"
-                    class="form-control" name="fechaingreso" required>
-            </div>
-            <div class="form-group">
-                <p>IdCliente</p>
-                <input type="text" placeholder="idcliente" id="idcliente" [(ngModel)]="outPut.IdCliente"
-                    name="idcliente" class="form-control">
+                <p>Cliente</p>
+                <select placeholder="idcliente" id="idcliente" [(ngModel)]="outPut.IdCliente" name="IdCliente" class="form-control">
+                    <option value="" selected="selected">Seleccione...</option>
+                    <option *ngFor="let cl of listaClientes" value="{{cl.Codigo}}">{{cl.Nombre}}</option>
+                </select>               
             </div>
             
             <div class="form-group">
-                <p>Motivo de la Consulta</p>
-                <input type="text" placeholder="motivoconsulta" id="motivoconsulta" [(ngModel)]="outPut.MotivoConsulta"
-                    name="motivoconsulta" class="form-control">
+                <p>Motivo de la consulta</p>
+                  
+                    <textarea  id="motivoconsulta" [(ngModel)]="outPut.MotivoConsulta" name="MotivoConsulta" class="form-control"></textarea>
             </div>
            
 

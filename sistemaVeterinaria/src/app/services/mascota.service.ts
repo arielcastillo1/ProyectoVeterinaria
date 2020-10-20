@@ -12,7 +12,7 @@ export class MascotaService {
 
 
   getMascotas(){
-    var ruta :string = this.url+"Api/Cliente/GetMascotas";
+    var ruta :string = this.url+"Api/Mascota/GetMascotas";
     return this.http.get<Mascota[]>(ruta,{responseType:'json'});
   }
 
