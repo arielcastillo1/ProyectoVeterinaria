@@ -15,8 +15,8 @@
                         <tr>                                                    
                             <th>Nombre</th>
                             <th>Descripcion</th>
-                            <th>TipoServicio</th>
-                            <th>Periocidad</th>
+                            <th>Tipo Servicio</th>
+                            <!-- <th>Periocidad</th> -->
                             <th>Activo</th>
                             <th>Precio</th>
                             
@@ -32,7 +32,7 @@
                             <td>{{cli.Nombre}}</td>     
                             <td>{{cli.Descripcion}}</td>     
                             <td>{{cli.TipoServicio}}</td>
-                            <td>{{cli.Periocidad}}</td>     
+                            <!-- <td>{{cli.Periocidad}}</td>      -->
                             <td>{{cli.Activo}}</td>   
                             <td>{{cli.Precio}}</td>                               
                         </tr>        
@@ -61,21 +61,25 @@
                     class="form-control">
             </div>
             <div class="form-group">
-                <p>Descripcion</p>
+                <p>Descripción</p>
                 <input type="text" placeholder="descripcion" id="descripcion" [(ngModel)]="outPut.Descripcion"
                     class="form-control" name="descripcion" required>
             </div>
             <div class="form-group">
-                <p>TipoServicio</p>
-                <input type="text" placeholder="tiposervicio" id="tiposervicio" [(ngModel)]="outPut.TipoServicio"
-                    name="tiposervicio" class="form-control">
+                <p>Tipo Servicio</p>
+                <!-- <input type="text" placeholder="tiposervicio" id="tiposervicio" [(ngModel)]="outPut.TipoServicio"
+                    name="tiposervicio" class="form-control"> -->
+                <select id="tiposervicio" [(ngModel)]="outPut.TipoServicio" name="tiposervicio" class="form-control">
+                    <option value="1">Periodico</option>
+                    <option value="2">Una sola vez</option>
+                </select>
             </div>
             
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <p>Periocidad</p>
                 <input type="text" placeholder="periocidad" id="periocidad" [(ngModel)]="outPut.Periocidad"
                     name="periocidad" class="form-control">
-            </div>
+            </div> -->
             <div class="form-group">
                 <p>Activo</p>
                 <input type="checkbox"  id="activo" [(ngModel)]="outPut.Activo"
