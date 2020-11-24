@@ -1,3 +1,5 @@
+import { storage } from 'firebase';
+
 export class Mascota {
 
     Codigo : string ; 
@@ -7,4 +9,5 @@ export class Mascota {
     Color : string ;
     Tamano : string ;
     IdCliente : string ;
+    Cliente:string;
 }

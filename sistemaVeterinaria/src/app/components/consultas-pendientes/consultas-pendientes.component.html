@@ -1,0 +1,54 @@
+
+
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="ibox">
+            <div class="ibox-title">
+                <h4>Listado de consultas pendientes</h4>
+            </div>
+            <div class="ibox-content">
+    
+                <table class="table">
+                    ​
+                    <!-- Encabezado de la tabla -->
+                    <thead>
+                        <tr>                                                    
+                            <th>Cliente</th>
+                            <th>Fecha</th>
+                            <th>Motivo</th>
+                            <th>Mascota</th>
+                            <th>Medico</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    ​
+                    <!-- -->
+    
+                    ​
+                    <!-- Cuerpo de la tabla -->
+                    <tbody>
+                        <tr *ngFor="let cli of listaConsultas">                            
+                            <td>{{cli.Cliente}}</td>     
+                            <td>{{cli.FechaCita}}</td>     
+                            <td>{{cli.Motivo}}</td>
+                            <td>
+                                <select>
+                                    <option *ngFor="let ma of cli.MascotasCliente" value="{{ma.IdMascota}}">{{ma.NombreMascota}}</option>
+                                </select>
+                            </td>     
+                            <td>
+                                <select>
+                                    <option *ngFor="let em of cli.MedicosDisponibles" value="{{em.IdEmpleado}}">{{em.NombreEmpleado}}</option>
+                                </select>
+                            </td>     
+                            <td><button>Iniciar</button></td>                           
+                        </tr>        
+      
+                    </tbody>
+                    ​
+                    ​
+                </table>                
+            </div>
+        </div>
+    </div>

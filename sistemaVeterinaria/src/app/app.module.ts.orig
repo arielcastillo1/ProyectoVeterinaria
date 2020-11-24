@@ -16,8 +16,11 @@ import { AuthService } from './services/auth.service';
 import { ClienteComponent } from './components/cliente/cliente.component';
 import { MascotaComponent } from './components/mascota/mascota.component';
 import { CitaComponent } from './components/cita/cita.component';
+<<<<<<< HEAD
 import { ServicioComponent } from './components/servicio/servicio.component';
+=======
 import { ConsultasPendientesComponent } from './components/consultas-pendientes/consultas-pendientes.component';
+>>>>>>> ef81a32b28d7a54f9d2a68b7279c0c1d9e977c1d
 
 @NgModule({
   declarations: [
@@ -27,8 +30,11 @@ import { ConsultasPendientesComponent } from './components/consultas-pendientes/
     ClienteComponent,
     MascotaComponent,
     CitaComponent,
-    ServicioComponent,
+<<<<<<< HEAD
+    ServicioComponent
+=======
     ConsultasPendientesComponent
+>>>>>>> ef81a32b28d7a54f9d2a68b7279c0c1d9e977c1d
   ],
   imports: [
     BrowserModule,

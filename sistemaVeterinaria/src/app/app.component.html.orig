@@ -4,8 +4,11 @@
       <a style="color:white" routerLink="/cliente">Clientes</a>&nbsp;
       <a style="color:white" routerLink="/mascota">Mascotas</a>&nbsp;
       <a style="color:white" routerLink="/cita">Citas</a>&nbsp;
+<<<<<<< HEAD
       <a style="color:white" routerLink="/servicio">Servicios</a>&nbsp;
+=======
       <a style="color:white" routerLink="/Consultas">Consultas</a>&nbsp;
+>>>>>>> ef81a32b28d7a54f9d2a68b7279c0c1d9e977c1d
     </div>
     <a style="color:white" (click)="authService.SignOut()">Cerrar sesión</a>
    

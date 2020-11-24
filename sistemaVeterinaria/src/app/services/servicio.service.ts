@@ -6,8 +6,8 @@ import { Servicio } from '../models/servicio';
   providedIn: 'root'
 })
 export class ServicioService {
-  //url='http://sitio2.bitworks.com.sv/backVeterinaria/';
-  url='http://localhost:50908/';
+  url='http://sitio2.bitworks.com.sv/backVeterinaria/';
+  //url='http://localhost:50908/';
   constructor(private http:HttpClient) { }
 
 
