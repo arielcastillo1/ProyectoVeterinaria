@@ -6,8 +6,8 @@ import { Cliente } from '../models/cliente';
   providedIn: 'root'
 })
 export class ClienteService {
-  url='http://sitio2.bitworks.com.sv/backVeterinaria/';
-  //url='http://localhost:50908/';
+  //url='http://sitio2.bitworks.com.sv/backVeterinaria/';
+  url='http://localhost:50908/';
   constructor(private http:HttpClient) { }
 
 

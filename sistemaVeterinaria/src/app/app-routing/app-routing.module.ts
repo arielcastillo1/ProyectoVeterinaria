@@ -8,6 +8,7 @@ import { AuthService } from '../services/auth.service';
 import { ClienteComponent } from '../components/cliente/cliente.component';
 import { MascotaComponent } from '../components/mascota/mascota.component';
 import { CitaComponent } from '../components/cita/cita.component';
+import { ConsultasPendientesComponent } from '../components/consultas-pendientes/consultas-pendientes.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/inicio', pathMatch: 'full' },
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'inicio', component: InicioComponent,canActivate:[AuthGuard]},
   { path: 'cliente',component:ClienteComponent,canActivate:[AuthGuard]},
   { path: 'mascota',component:MascotaComponent,canActivate:[AuthGuard]},
-  { path: 'cita',component:CitaComponent,canActivate:[AuthGuard]}  
+  { path: 'cita',component:CitaComponent,canActivate:[AuthGuard]},
+  { path:'Consultas', component: ConsultasPendientesComponent,canActivate:[AuthGuard]}  
 ];
 
 

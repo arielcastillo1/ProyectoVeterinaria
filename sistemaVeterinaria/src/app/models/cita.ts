@@ -4,4 +4,5 @@ export class Cita {
     FechaIngreso : string; 
     IdCliente : string ; 
     MotivoConsulta : string ;
+    Cliente:string;
 }
