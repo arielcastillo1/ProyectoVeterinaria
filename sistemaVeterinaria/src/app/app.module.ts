@@ -16,6 +16,7 @@ import { AuthService } from './services/auth.service';
 import { ClienteComponent } from './components/cliente/cliente.component';
 import { MascotaComponent } from './components/mascota/mascota.component';
 import { CitaComponent } from './components/cita/cita.component';
+import { ServicioComponent } from './components/servicio/servicio.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CitaComponent } from './components/cita/cita.component';
     InicioComponent,
     ClienteComponent,
     MascotaComponent,
-    CitaComponent
+    CitaComponent,
+    ServicioComponent
   ],
   imports: [
     BrowserModule,

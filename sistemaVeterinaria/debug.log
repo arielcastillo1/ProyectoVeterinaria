@@ -1,1 +1,4 @@
 [1019/101355.155:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1121/185919.162:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1121/185919.227:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\ariel\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\7b5c8a6d-71e4-4582-a3b2-6375cead0950: El sistema no puede encontrar la ruta especificada. (0x3)
+[1121/210526.934:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)

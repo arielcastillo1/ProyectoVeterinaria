@@ -8,6 +8,7 @@ import { AuthService } from '../services/auth.service';
 import { ClienteComponent } from '../components/cliente/cliente.component';
 import { MascotaComponent } from '../components/mascota/mascota.component';
 import { CitaComponent } from '../components/cita/cita.component';
+import { ServicioComponent } from '../components/servicio/servicio.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/inicio', pathMatch: 'full' },
@@ -15,7 +16,9 @@ const routes: Routes = [
   { path: 'inicio', component: InicioComponent,canActivate:[AuthGuard]},
   { path: 'cliente',component:ClienteComponent,canActivate:[AuthGuard]},
   { path: 'mascota',component:MascotaComponent,canActivate:[AuthGuard]},
-  { path: 'cita',component:CitaComponent,canActivate:[AuthGuard]}  
+  { path: 'cita',component:CitaComponent,canActivate:[AuthGuard]} ,
+  { path: 'servicio',component:ServicioComponent,canActivate:[AuthGuard]},
+  
 ];
 
 
